@@ -32,11 +32,7 @@ variable "default_cidr_block" {
 }
 
 variable "vpc_cidr" {
-  type    = string
-  default = "10.10.0.0/16"
-}
-
-variable "image_id" {
-  description = "EC2 Image ID"
+  description = "VPC CIDR that is gonna be used in the project"
   type        = string
+  default     = "10.10.0.0/16"
 }
